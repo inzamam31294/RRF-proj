@@ -16,8 +16,7 @@ const store = createStore(rootReducer,
     applyMiddleware(thunk.withExtraArgument({ getFirebase, getFirestore })),
     reactReduxFirebase(fbConfig),
     reduxFirestore(fbConfig)
-    ), 
-
+    ),
 )
 
 ReactDOM.render(
